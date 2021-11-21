@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  web:
+    image: itsmarcdelacruz/tcmg412lab6real:group6
+    build: .
+    ports:
+      - "4000:80"
+    environment:
+      FLASK_ENV: development
+  redis:
+    image: "redis"
